@@ -1,0 +1,114 @@
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.calendar-banner {
+  margin: 24px 32px 0;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid var(--accent-primary);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.calendar-banner h3 {
+  margin: 0 0 4px 0;
+  color: var(--accent-primary);
+}
+
+.calendar-banner p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  flex: 1;
+}
+
+.contests-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.contests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.contest-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast);
+}
+
+.contest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.platform-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.platform-badge.leetcode { background: rgba(255, 161, 22, 0.2); color: #ffa116; }
+.platform-badge.codeforces { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+.platform-badge.codechef { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; }
+
+.contest-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.contest-details {
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.contest-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.contest-details span {
+  color: var(--text-secondary);
+  display: inline-block;
+  width: 70px;
+}
+
+.full-width {
+  width: 100%;
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.chat-section {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
